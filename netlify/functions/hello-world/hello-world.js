@@ -1,10 +1,10 @@
-// Trigger deploy 2
+// Trigger deploy 3
 const handler = async (event) => {
   try {
     const subject = event.queryStringParameters.name || 'World'
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `Hello ${subject}` }),
+      body: JSON.stringify({ message: `Hello ${subject} from functions origin` }),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
