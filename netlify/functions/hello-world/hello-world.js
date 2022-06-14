@@ -1,6 +1,11 @@
 exports.handler = async function (event, context) {
 
-  setTimeout(() => { 
-    console.log("I am here")
-  }, 20000);
+  while (true) {
+    console.log("here")
+  }
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Hello functions origin" }),
+  };
 }
