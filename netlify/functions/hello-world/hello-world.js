@@ -1,17 +1,6 @@
-// Trigger deploy 3
-const handler = async (event) => {
-  try {
-    const subject = event.queryStringParameters.name || 'World'
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: `Hello ${subject} from functions origin` }),
-      // // more keys you can return:
-      // headers: { "headerName": "headerValue", ... },
-      // isBase64Encoded: true,
-    }
-  } catch (error) {
-    return { statusCode: 500, body: error.toString() }
-  }
+exports.handler = async function (event, context) {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Hello functions origin" }),
+  };
 }
-
-module.exports = { handler }
