@@ -1,11 +1,14 @@
-exports.handler = async function (event, context) {
-
-  while (true) {
-    console.log("here")
+// Trigger deploy 4
+const handler = async (event) => {
+  try {
+    const subject = event.queryStringParameters.name || 'World'
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: `Hello ${subject} from functions origin` }),
+    }
+  } catch (error) {
+    return { statusCode: 500, body: error.toString() }
   }
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ message: "Hello functions origin" }),
-  };
 }
+
+module.exports = { handler }
