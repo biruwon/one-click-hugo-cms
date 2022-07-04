@@ -1,4 +1,4 @@
-// Trigger deploy 22
+// Trigger deploy 23
 const handler = async (event) => {
   try {
     const subject = event.queryStringParameters.name || 'World'
