@@ -1,0 +1,7 @@
+{
+    "config": {
+        "name": "My Awesome Function",
+        "generator": "@netlify/fake-plugin@1.0.0"
+    },
+    "version": 1
+}
