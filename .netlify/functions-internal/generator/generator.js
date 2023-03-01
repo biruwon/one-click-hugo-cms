@@ -1,6 +1,6 @@
 const handler = async (event) => {
     try {  
-      console.log("This is me logging things 2!")
+      console.log("This is me logging things 3!")
   
       return {
         statusCode: 200,
