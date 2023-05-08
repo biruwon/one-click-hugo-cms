@@ -4,7 +4,7 @@ const handler = async (event) => {
   try {
     const subject = event.queryStringParameters.name || 'World'
 
-    console.log("This is me logging things!")
+    consol
 
     return {
       statusCode: 200,
