@@ -1,10 +1,8 @@
-// Trigger deploy 168
+// Trigger deploy 169
 
 const handler = async (event) => {
   try {
     const subject = event.queryStringParameters.name || 'World'
-
-    consol
 
     return {
       statusCode: 200,
