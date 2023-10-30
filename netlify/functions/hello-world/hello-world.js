@@ -2,7 +2,7 @@
 
 const handler = async (event) => {
   try {
-    const subject = event.queryStringParameters.name || 'World A'
+    const subject = event.queryStringParameters.name || 'World B'
 
     console.log("This is me logging things!");
 
