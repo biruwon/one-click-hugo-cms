@@ -1,8 +1,8 @@
-// Trigger deploy 186
+// Trigger deploy 187
 
 const handler = async (event) => {
   try {
-    const subject = event.queryStringParameters.name || 'World'
+    const subject = event.queryStringParameters.name || 'World A'
 
     console.log("This is me logging things!");
 
