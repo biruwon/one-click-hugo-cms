@@ -1,4 +1,4 @@
-// Trigger deploy 3
+// Trigger deploy 4
 const handler = async (event) => {
   try {
     console.log("This is extra function!")
